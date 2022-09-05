@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "prettier": "2.7.1"
+  },
+  "name": "rays-auto-eleventy",
+  "description": "Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
