@@ -1,12 +1,19 @@
 ---
-layout: _base-layout.ejs
+layout: _project-layout.ejs
 ---
 
 <div class="theme-page padding-bottom-66">
   <div class="clearfix">
     <div class="row full-width">
-      <div class="contact-map" id="map" data-scroll-wheel="0" data-draggable="0"></div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1480.1113747600418!2d-75.914!3d42.1027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9ba075c94bc017a!2sRay&#39;s%20Auto%20(NAPA%20AutoCare%20Center)!5e0!3m2!1sen!2sus!4v1663540580008!5m2!1sen!2sus"
+        width="100%" height="450" style="border: 0" allowfullscreen="" loading="eager"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- <div class="contact-map" id="map" data-scroll-wheel="0" data-draggable="0"></div> -->
     </div>
+
+    <!-- Features Row -->
     <div class="row page-margin-top">
       <div class="column column-1-3">
         <ul class="features-list">
@@ -14,13 +21,15 @@ layout: _base-layout.ejs
             <h5>CALL US NOW AT</h5>
             <div class="icon sl-small-phone-circle"></div>
             <p>
-              Mobile: (520) 577 2710<br />
-              Assistance: (520) 577 2725<br />
-              Weekdays: (520) 577 7212
+              <span>Phone: <a href="tel:607-722-3000">607-722-3000</a> </span>
+              <p>24/7 Towing: <a href="tel:1-800-666-2869">1-800-666-2869</a> </p>
+
             </p>
           </li>
         </ul>
       </div>
+
+      <!-- RAYS ADDRESS -->
       <div class="column column-1-3">
         <ul class="features-list">
           <li>
@@ -36,6 +45,8 @@ layout: _base-layout.ejs
           </li>
         </ul>
       </div>
+
+      <!-- 24/7 ASSISTANCE -->
       <div class="column column-1-3">
         <ul class="features-list">
           <li>
@@ -49,31 +60,6 @@ layout: _base-layout.ejs
         </ul>
       </div>
     </div>
-    <div class="row page-margin-top">
-      <form class="contact-form" id="contact-form" method="post" action="contact_form/contact_form.php">
-        <div class="row">
-          <fieldset class="column column-1-2">
-            <input class="text-input" name="name" type="text" value="Your Name *" placeholder="Your Name *" />
-            <input class="text-input" name="email" type="text" value="Your Email *" placeholder="Your Email *" />
-            <input class="text-input" name="phone" type="text" value="Your Phone" placeholder="Your Phone" />
-          </fieldset>
-          <fieldset class="column column-1-2">
-            <textarea name="message" placeholder="Message *">
-Message *</textarea>
-          </fieldset>
-        </div>
-        <div class="row margin-top-30">
-          <div class="column column-1-2">
-            <p>We will contact you within one business day.</p>
-          </div>
-          <div class="column column-1-2 align-right">
-            <input type="hidden" name="action" value="contact_form" />
-            <div class="row margin-top-20 padding-bottom-20">
-              <a class="more submit-contact-form" href="#" title="SEND MESSAGE"><span>SEND MESSAGE</span></a>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
+    
   </div>
 </div>
