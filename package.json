@@ -1,16 +1,25 @@
 {
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "prettier": "2.7.1"
-  },
   "name": "rays-auto-eleventy",
-  "description": "Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).",
+  "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasoncarr95/rays-auto-eleventy.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasoncarr95/rays-auto-eleventy/issues"
+  },
+  "homepage": "https://github.com/jasoncarr95/rays-auto-eleventy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
 }
