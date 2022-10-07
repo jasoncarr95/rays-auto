@@ -1,6 +1,5 @@
 .prettierignore
 node_modules
-fonts
 notes
 _site
 alt
