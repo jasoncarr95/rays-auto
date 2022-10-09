@@ -1,33 +1,32 @@
-# My Awesome Project
+# Ray's Auto Service
 
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+This is the production repo for a freelance client of mine's website. The client is an auto repair shop & towing service located in Binghamton, NY.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+I used eleventy -a static site generator, and deployed it on netlify.
 
-![alt tag](http://placecorgi.com/1200/650)
+[Live Site](https://rays-auto.netlify.app/)
+
+![Screenshot of website home page](rays-site-screenshot.png)
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript, EJS, Eleventy
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+They wanted a fairly basic site, so I mostly used regular HTML/CSS. 
 
-## Optimizations
+I also decided to use eleventy, a static site generator. I made this decision because I wanted to add a semblance of modularity to the code. Since this site doesn't use react or anything, making changes was tiresome. For example to update the header, which is displayed on every page, it involved hunting down code in every separate HTML file for each individual page.
+Eleventy allowed me to use EJS partials, which in a way are like components in react. Then I was able to only write the code for the header in one file, and include it on each page.. much better!
+
+<!-- ## Optimizations
 
 _(optional)_
 
-You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews! -->
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+This was my first time using a static site generator, and it was definitely worth the time it took to learn how to use eleventy. It's a nice option for a simple static site or something like a blog, however react would be better for more complex UIs/apps.
 
-## Examples:
+I also wasted a good amount of time trying to work with the google maps API, before realizing it was 1000x easier and just as effective (in this particular use-case) to simply embed an iframe to display the google map (see below).
 
-Take a look at these couple examples that I have in my own portfolio:
-
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
+![Screenshot of website home page](rays-map-screenshot.png)
