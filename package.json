@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/jasoncarr95/rays-auto-eleventy#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^2.0.1"
   }
 }
